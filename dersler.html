@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dersler | Hukuk Akademi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================================
+         MOBİL ÜST MENÜ
+    ================================= -->
+    <header class="mobile-header">
+
+        <div class="mobile-brand">
+            <div class="mobile-brand-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <span>HUKUK AKADEMİ</span>
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================================
+         MOBİL AÇILIR MENÜ
+    ================================= -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html" class="mobile-menu-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Ana Sayfa</span>
+        </a>
+
+        <a href="dersler.html" class="mobile-menu-item active">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Dersler</span>
+        </a>
+
+        <a href="test.html" class="mobile-menu-item">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Testler</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Deneme Sınavları</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <span>Yanlışlarım</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>İstatistikler</span>
+        </a>
+
+    </div>
+
+
+    <!-- ================================
+         SOL MENÜ
+    ================================= -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>HUKUK</span>
+                <strong>AKADEMİ</strong>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Ana Sayfa</span>
+            </a>
+
+            <a href="dersler.html" class="menu-item active">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Dersler</span>
+            </a>
+
+            <a href="test.html" class="menu-item">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Testler</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <span>Deneme Sınavları</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Yanlışlarım</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>İstatistikler</span>
+            </a>
+
+        </nav>
+
+
+        <div class="weekly-goal">
+
+            <p>Haftalık Hedef</p>
+
+            <div class="goal-circle">
+                <strong>72%</strong>
+            </div>
+
+            <span>5 / 7 gün tamamlandı</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================================
+         ANA İÇERİK
+    ================================= -->
+    <main class="main-content courses-page">
+
+        <!-- ÜST BAR -->
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <span>Hoş geldin 👋</span>
+                    <h2>Öğrenci</h2>
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Ders ara...">
+                </div>
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- BAŞLIK -->
+        <section class="courses-page-header">
+
+            <div>
+                <span class="courses-page-small-title">
+                    EĞİTİM PROGRAMIN
+                </span>
+
+                <h1>Derslerim</h1>
+
+                <p>
+                    Hukuk eğitimine kaldığın yerden devam et.
+                    Derslerini, konu sayılarını ve ilerleme durumunu buradan takip edebilirsin.
+                </p>
+            </div>
+
+            <div class="courses-overview">
+
+                <div>
+                    <strong>6</strong>
+                    <span>Ders</span>
+                </div>
+
+                <div>
+                    <strong>75</strong>
+                    <span>Konu</span>
+                </div>
+
+                <div>
+                    <strong>%52</strong>
+                    <span>Genel İlerleme</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FİLTRE -->
+        <section class="course-filter-bar">
+
+            <div class="course-filter-tabs">
+
+                <button class="course-filter active" data-filter="all">
+                    Tüm Dersler
+                </button>
+
+                <button class="course-filter" data-filter="ozel">
+                    Özel Hukuk
+                </button>
+
+                <button class="course-filter" data-filter="kamu">
+                    Kamu Hukuku
+                </button>
+
+            </div>
+
+            <span class="course-count">
+                6 ders görüntüleniyor
+            </span>
+
+        </section>
+
+
+        <!-- ================================
+             DERS KARTLARI
+        ================================= -->
+        <section class="all-courses-grid">
+
+
+            <!-- BORÇLAR HUKUKU -->
+            <article class="all-course-card featured-course" data-category="ozel">
+
+                <div class="all-course-cover purple-course">
+
+                    <span class="course-category-badge">
+                        Özel Hukuk
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+
+                    <h3>BORÇLAR HUKUKU</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+
+                        <div>
+                            <span>Özel Hukuk</span>
+                            <h2>Borçlar Hukuku</h2>
+                        </div>
+
+                        <span class="active-course-badge">
+                            Aktif Ders
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Sözleşmeler, borç ilişkileri ve borcun sona ermesine
+                        ilişkin temel kavramları öğren.
+                    </p>
+
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            12 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            4s 30dk
+                        </span>
+
+                    </div>
+
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>65%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 65%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <a href="borclar-hukuku.html"
+                       class="all-course-button primary-course-button">
+
+                        Derse Devam Et
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CEZA HUKUKU -->
+            <article class="all-course-card" data-category="kamu">
+
+                <div class="all-course-cover blue-course">
+
+                    <span class="course-category-badge">
+                        Kamu Hukuku
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+
+                    <h3>CEZA HUKUKU</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+                        <div>
+                            <span>Kamu Hukuku</span>
+                            <h2>Ceza Hukuku</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Suçun unsurları, ceza sorumluluğu ve yaptırım
+                        sisteminin temel esaslarını incele.
+                    </p>
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            15 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            6s 10dk
+                        </span>
+
+                    </div>
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>38%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 38%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="all-course-button demo-course-button" disabled>
+                        Demo İçerik
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ANAYASA HUKUKU -->
+            <article class="all-course-card" data-category="kamu">
+
+                <div class="all-course-cover orange-course">
+
+                    <span class="course-category-badge">
+                        Kamu Hukuku
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <h3>ANAYASA HUKUKU</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+                        <div>
+                            <span>Kamu Hukuku</span>
+                            <h2>Anayasa Hukuku</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Anayasal düzeni, temel hakları ve devlet
+                        organlarının yapısını sistemli şekilde öğren.
+                    </p>
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            10 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3s 45dk
+                        </span>
+
+                    </div>
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>82%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 82%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="all-course-button demo-course-button" disabled>
+                        Demo İçerik
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- MEDENİ HUKUK -->
+            <article class="all-course-card" data-category="ozel">
+
+                <div class="all-course-cover pink-course">
+
+                    <span class="course-category-badge">
+                        Özel Hukuk
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+
+                    <h3>MEDENİ HUKUK</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+                        <div>
+                            <span>Özel Hukuk</span>
+                            <h2>Medeni Hukuk</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Kişiler, aile, miras ve eşya hukukuna ilişkin
+                        temel kavramları keşfet.
+                    </p>
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            14 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            5s 20dk
+                        </span>
+
+                    </div>
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>54%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 54%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="all-course-button demo-course-button" disabled>
+                        Demo İçerik
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- İDARE HUKUKU -->
+            <article class="all-course-card" data-category="kamu">
+
+                <div class="all-course-cover green-course">
+
+                    <span class="course-category-badge">
+                        Kamu Hukuku
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <h3>İDARE HUKUKU</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+                        <div>
+                            <span>Kamu Hukuku</span>
+                            <h2>İdare Hukuku</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        İdarenin yapısını, idari işlemleri ve kamu
+                        hizmetlerinin temel esaslarını öğren.
+                    </p>
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            11 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            4s 15dk
+                        </span>
+
+                    </div>
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>27%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 27%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="all-course-button demo-course-button" disabled>
+                        Demo İçerik
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- TİCARET HUKUKU -->
+            <article class="all-course-card" data-category="ozel">
+
+                <div class="all-course-cover teal-course">
+
+                    <span class="course-category-badge">
+                        Özel Hukuk
+                    </span>
+
+                    <div class="all-course-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>TİCARET HUKUKU</h3>
+
+                </div>
+
+
+                <div class="all-course-content">
+
+                    <div class="course-card-heading">
+                        <div>
+                            <span>Özel Hukuk</span>
+                            <h2>Ticaret Hukuku</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Ticari işletme, şirketler ve kıymetli evrak
+                        hukukunun temel yapılarını incele.
+                    </p>
+
+                    <div class="all-course-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle-play"></i>
+                            13 Konu
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            5s 50dk
+                        </span>
+
+                    </div>
+
+                    <div class="all-course-progress">
+
+                        <div class="course-progress-info">
+                            <span>İlerleme</span>
+                            <strong>43%</strong>
+                        </div>
+
+                        <div class="course-progress-track">
+                            <div style="width: 43%;"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="all-course-button demo-course-button" disabled>
+                        Demo İçerik
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

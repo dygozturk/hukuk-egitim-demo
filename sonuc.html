@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Sonucu | Hukuk Akademi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+    <!-- ================================
+        MOBİL ÜST MENÜ
+    ================================= -->
+    <header class="mobile-header">
+
+        <div class="mobile-brand">
+            <div class="mobile-brand-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <span>HUKUK AKADEMİ</span>
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================================
+         MOBİL AÇILIR MENÜ
+    ================================= -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html" class="mobile-menu-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Ana Sayfa</span>
+        </a>
+
+        <a href="dersler.html" class="mobile-menu-item">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Dersler</span>
+        </a>
+
+        <a href="test.html" class="mobile-menu-item active">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Testler</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Deneme Sınavları</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <span>Yanlışlarım</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>İstatistikler</span>
+        </a>
+
+    </div>
+
+    <!-- SOL MENÜ -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>HUKUK</span>
+                <strong>AKADEMİ</strong>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Ana Sayfa</span>
+            </a>
+
+            <a href="dersler.html" class="menu-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Dersler</span>
+            </a>
+
+            <a href="test.html" class="menu-item active">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Testler</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <span>Deneme Sınavları</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Yanlışlarım</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>İstatistikler</span>
+            </a>
+
+        </nav>
+
+
+        <div class="weekly-goal">
+
+            <p>Haftalık Hedef</p>
+
+            <div class="goal-circle">
+                <strong>72%</strong>
+            </div>
+
+            <span>5 / 7 gün tamamlandı</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ANA ALAN -->
+    <main class="main-content result-page">
+
+        <!-- ÜST BAR -->
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <span>Test tamamlandı 🎉</span>
+                    <h2>Sonuçların</h2>
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="test-course-label">
+
+                    <i class="fa-solid fa-scale-balanced"></i>
+
+                    <div>
+                        <span>BORÇLAR HUKUKU</span>
+                        <strong>Sözleşmenin Kurulması</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- BREADCRUMB -->
+        <div class="lesson-breadcrumb">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Ana Sayfa
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>Borçlar Hukuku</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <strong>Test Sonucu</strong>
+
+        </div>
+
+
+        <!-- SONUÇ HERO -->
+        <section class="result-hero">
+
+            <div class="result-hero-content">
+
+                <span class="result-label">
+                    TEST TAMAMLANDI
+                </span>
+
+                <h1 id="resultMessage">
+                    Sonucun Hazır!
+                </h1>
+
+                <p>
+                    Sözleşmenin Kurulması konu testindeki
+                    performansını ve soru analizini inceleyebilirsin.
+                </p>
+
+
+                <div class="result-actions">
+
+                    <button
+                        class="result-primary-button"
+                        onclick="window.location.href='test.html'">
+
+                        <i class="fa-solid fa-rotate-right"></i>
+                        Testi Tekrar Çöz
+
+                    </button>
+
+
+                    <button
+                        class="result-secondary-button"
+                        onclick="window.location.href='borclar-hukuku.html'">
+
+                        <i class="fa-solid fa-book-open"></i>
+                        Derse Dön
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PUAN DAİRESİ -->
+            <div class="result-score-area">
+
+                <div
+                    class="big-score-circle"
+                    id="bigScoreCircle">
+
+                    <div>
+
+                        <strong id="scoreValue">
+                            0
+                        </strong>
+
+                        <span>/ 100</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="score-caption">
+
+                    <strong id="scoreCaption">
+                        Sonuç
+                    </strong>
+
+                    <span>Başarı Puanı</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÖZET KARTLARI -->
+        <section class="result-summary-grid">
+
+            <div class="result-stat-card correct-stat">
+
+                <div class="result-stat-icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <div>
+                    <span>Doğru</span>
+
+                    <strong id="correctResult">
+                        0
+                    </strong>
+
+                    <small>5 sorudan</small>
+                </div>
+
+            </div>
+
+
+            <div class="result-stat-card wrong-stat">
+
+                <div class="result-stat-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <div>
+                    <span>Yanlış</span>
+
+                    <strong id="wrongResult">
+                        0
+                    </strong>
+
+                    <small>5 sorudan</small>
+                </div>
+
+            </div>
+
+
+            <div class="result-stat-card empty-stat">
+
+                <div class="result-stat-icon">
+                    <i class="fa-solid fa-minus"></i>
+                </div>
+
+                <div>
+                    <span>Boş</span>
+
+                    <strong id="emptyResult">
+                        0
+                    </strong>
+
+                    <small>5 sorudan</small>
+                </div>
+
+            </div>
+
+
+            <div class="result-stat-card success-stat">
+
+                <div class="result-stat-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <span>Başarı</span>
+
+                    <strong id="successResult">
+                        %0
+                    </strong>
+
+                    <small>Genel oran</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALT ALAN -->
+        <section class="result-content-layout">
+
+            <!-- SORU ANALİZİ -->
+            <div class="analysis-card">
+
+                <div class="analysis-heading">
+
+                    <div>
+                        <span class="small-title">
+                            DETAYLI İNCELEME
+                        </span>
+
+                        <h2>Soru Analizi</h2>
+
+                        <p>
+                            Cevaplarını, doğru seçenekleri ve
+                            ilgili açıklamaları incele.
+                        </p>
+                    </div>
+
+
+                    <div class="analysis-filter">
+
+                        <button
+                            class="analysis-filter-button active"
+                            data-filter="all">
+
+                            Tümü
+
+                        </button>
+
+                        <button
+                            class="analysis-filter-button"
+                            data-filter="wrong">
+
+                            Yanlışlarım
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JavaScript soruları buraya getirecek -->
+                <div
+                    class="analysis-list"
+                    id="analysisList">
+                </div>
+
+            </div>
+
+
+            <!-- SAĞ PANEL -->
+            <aside class="result-side-panel">
+
+                <div class="performance-card">
+
+                    <span class="small-title">
+                        PERFORMANS
+                    </span>
+
+                    <h3>Test Özeti</h3>
+
+
+                    <div class="performance-circle">
+
+                        <strong id="performancePercent">
+                            %0
+                        </strong>
+
+                        <span>Başarı</span>
+
+                    </div>
+
+
+                    <div class="performance-bar-row">
+
+                        <div>
+                            <span>Doğruluk Oranı</span>
+
+                            <strong id="accuracyText">
+                                %0
+                            </strong>
+                        </div>
+
+                        <div class="performance-bar">
+                            <div id="accuracyBar"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-bar-row">
+
+                        <div>
+                            <span>Tamamlama</span>
+
+                            <strong id="completionText">
+                                %0
+                            </strong>
+                        </div>
+
+                        <div class="performance-bar">
+                            <div id="completionBar"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="recommendation-card">
+
+                    <div class="recommendation-icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+
+                    <span>ÖNERİ</span>
+
+                    <h3 id="recommendationTitle">
+                        Çalışmaya devam et
+                    </h3>
+
+                    <p id="recommendationText">
+                        Sonuçlarına göre çalışma önerin burada
+                        görüntülenecek.
+                    </p>
+
+
+                    <button onclick="window.location.href='borclar-hukuku.html'">
+
+                        Konuyu Tekrar Et
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

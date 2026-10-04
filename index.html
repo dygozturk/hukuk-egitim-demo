@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hukuk Akademi | Öğrenci Paneli</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+    <!-- ================================
+         MOBİL ÜST MENÜ
+    ================================= -->
+    <header class="mobile-header">
+
+        <div class="mobile-brand">
+            <div class="mobile-brand-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <span>HUKUK AKADEMİ</span>
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================================
+         MOBİL AÇILIR MENÜ
+    ================================= -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html" class="mobile-menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Ana Sayfa</span>
+        </a>
+
+        <a href="dersler.html" class="mobile-menu-item">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Dersler</span>
+        </a>
+
+        <a href="test.html" class="mobile-menu-item">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Testler</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Deneme Sınavları</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <span>Yanlışlarım</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>İstatistikler</span>
+        </a>
+
+    </div>
+
+    <!-- ================================
+         SOL MENÜ
+    ================================= -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>HUKUK</span>
+                <strong>AKADEMİ</strong>
+            </div>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Ana Sayfa</span>
+            </a>
+
+            <a href="dersler.html" class="menu-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Dersler</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Testler</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <span>Deneme Sınavları</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Yanlışlarım</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>İstatistikler</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Haftalık hedef -->
+        <div class="weekly-goal">
+
+            <p>Haftalık Hedef</p>
+
+            <div class="goal-circle">
+                <strong>72%</strong>
+            </div>
+
+            <span>5 / 7 gün tamamlandı</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================================
+         ANA ALAN
+    ================================= -->
+    <main class="main-content">
+
+        <!-- ÜST BAR -->
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <span>Hoş geldin 👋</span>
+                    <h2>Duygu ÖZTÜRK</h2>
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        placeholder="Ders, konu veya test ara..."
+                    >
+                </div>
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-button">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================================
+             AKTİF DERSLER
+        ================================= -->
+        <section class="courses-section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="small-title">ÖĞRENMEYE DEVAM ET</span>
+                    <h2>Aktif Dersler</h2>
+                </div>
+
+                <button class="see-all">
+                    Tümünü Gör
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="course-grid">
+
+                <!-- BORÇLAR HUKUKU -->
+                <article class="course-card">
+
+                    <div class="course-cover purple-cover">
+
+                        <div class="cover-icon">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+
+                        <span>BORÇLAR HUKUKU</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Özel Hukuk
+                        </span>
+
+                        <h3>Borçlar Hukuku</h3>
+
+                        <p>
+                            Sözleşmeler ve borç ilişkilerinin
+                            temel kavramlarını öğren.
+                        </p>
+
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-solid fa-circle-play"></i>
+                                12 Konu
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                4s 30dk
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress-row">
+
+                            <div>
+                                <span>İlerleme</span>
+
+                                <div class="progress">
+                                    <div style="width: 65%"></div>
+                                </div>
+                            </div>
+
+                            <strong>65%</strong>
+
+                        </div>
+
+
+                        <button 
+                            class="continue-button"
+                            onclick="window.location.href='borclar-hukuku.html'">
+                            
+                            Derse Devam Et
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CEZA HUKUKU -->
+                <article class="course-card">
+
+                    <div class="course-cover blue-cover">
+
+                        <div class="cover-icon">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+
+                        <span>CEZA HUKUKU</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Kamu Hukuku
+                        </span>
+
+                        <h3>Ceza Hukuku</h3>
+
+                        <p>
+                            Suç, ceza ve ceza sorumluluğunun
+                            temel esaslarını incele.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-solid fa-circle-play"></i>
+                                15 Konu
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                6s 10dk
+                            </span>
+
+                        </div>
+
+                        <div class="progress-row">
+
+                            <div>
+                                <span>İlerleme</span>
+
+                                <div class="progress">
+                                    <div style="width: 38%"></div>
+                                </div>
+                            </div>
+
+                            <strong>38%</strong>
+
+                        </div>
+
+                        <button class="continue-button">
+                            Derse Devam Et
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ANAYASA HUKUKU -->
+                <article class="course-card">
+
+                    <div class="course-cover orange-cover">
+
+                        <div class="cover-icon">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+
+                        <span>ANAYASA HUKUKU</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Kamu Hukuku
+                        </span>
+
+                        <h3>Anayasa Hukuku</h3>
+
+                        <p>
+                            Devlet yapısı, temel haklar ve
+                            anayasal sistemi öğren.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-solid fa-circle-play"></i>
+                                10 Konu
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                3s 45dk
+                            </span>
+
+                        </div>
+
+                        <div class="progress-row">
+
+                            <div>
+                                <span>İlerleme</span>
+
+                                <div class="progress">
+                                    <div style="width: 82%"></div>
+                                </div>
+                            </div>
+
+                            <strong>82%</strong>
+
+                        </div>
+
+                        <button class="continue-button">
+                            Derse Devam Et
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             ALT DASHBOARD
+        ================================= -->
+        <section class="dashboard-bottom">
+
+            <!-- SOL -->
+            <div class="statistics-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="small-title">
+                            SON 7 GÜN
+                        </span>
+
+                        <h3>Başarı İstatistiği</h3>
+                    </div>
+
+                    <select>
+                        <option>Haftalık</option>
+                        <option>Aylık</option>
+                    </select>
+
+                </div>
+
+
+                <div class="score-area">
+
+                    <div class="score-circle">
+                        <strong>78%</strong>
+                        <span>Başarı</span>
+                    </div>
+
+
+                    <div class="score-details">
+
+                        <div>
+                            <span class="dot correct"></span>
+
+                            <p>
+                                <strong>42</strong>
+                                Doğru
+                            </p>
+                        </div>
+
+                        <div>
+                            <span class="dot wrong"></span>
+
+                            <p>
+                                <strong>12</strong>
+                                Yanlış
+                            </p>
+                        </div>
+
+                        <div>
+                            <span class="dot empty"></span>
+
+                            <p>
+                                <strong>6</strong>
+                                Boş
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="week-bars">
+
+                    <div>
+                        <span style="height:45%"></span>
+                        <p>Pzt</p>
+                    </div>
+
+                    <div>
+                        <span style="height:70%"></span>
+                        <p>Sal</p>
+                    </div>
+
+                    <div>
+                        <span style="height:55%"></span>
+                        <p>Çar</p>
+                    </div>
+
+                    <div>
+                        <span style="height:90%"></span>
+                        <p>Per</p>
+                    </div>
+
+                    <div>
+                        <span style="height:68%"></span>
+                        <p>Cum</p>
+                    </div>
+
+                    <div>
+                        <span style="height:82%"></span>
+                        <p>Cmt</p>
+                    </div>
+
+                    <div>
+                        <span style="height:60%"></span>
+                        <p>Paz</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAĞ -->
+            <div class="right-cards">
+
+                <div class="mini-card">
+
+                    <div class="mini-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+                        <span>Çözülen Test</span>
+                        <strong>24</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    <div class="mini-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>Çalışma Süresi</span>
+                        <strong>18s</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="achievement-card">
+
+                    <div class="achievement-title">
+
+                        <div>
+                            <span class="small-title">
+                                BAŞARIMLAR
+                            </span>
+
+                            <h3>Rozetlerin</h3>
+                        </div>
+
+                        <span>3 / 6</span>
+
+                    </div>
+
+
+                    <div class="badges">
+
+                        <div class="badge unlocked">
+                            <i class="fa-solid fa-medal"></i>
+                            <span>İlk Test</span>
+                        </div>
+
+                        <div class="badge unlocked">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>5 Gün Seri</span>
+                        </div>
+
+                        <div class="badge unlocked">
+                            <i class="fa-solid fa-star"></i>
+                            <span>%90 Başarı</span>
+                        </div>
+
+                        <div class="badge locked">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>50 Test</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

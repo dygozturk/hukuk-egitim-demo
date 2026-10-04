@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borçlar Hukuku | Hukuk Akademi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+    <!-- ================================
+        MOBİL ÜST MENÜ
+    ================================= -->
+    <header class="mobile-header">
+
+        <div class="mobile-brand">
+            <div class="mobile-brand-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <span>HUKUK AKADEMİ</span>
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================================
+         MOBİL AÇILIR MENÜ
+    ================================= -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html" class="mobile-menu-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Ana Sayfa</span>
+        </a>
+
+        <a href="dersler.html" class="mobile-menu-item active">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Dersler</span>
+        </a>
+
+        <a href="test.html" class="mobile-menu-item">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Testler</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Deneme Sınavları</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <span>Yanlışlarım</span>
+        </a>
+
+        <a href="#" class="mobile-menu-item">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>İstatistikler</span>
+        </a>
+
+    </div>
+
+    <!-- SOL MENÜ -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>HUKUK</span>
+                <strong>AKADEMİ</strong>
+            </div>
+        </div>
+
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Ana Sayfa</span>
+            </a>
+
+            <a href="dersler.html" class="menu-item active">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Dersler</span>
+            </a>
+
+            <a href="test.html" class="menu-item">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Testler</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <span>Deneme Sınavları</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Yanlışlarım</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>İstatistikler</span>
+            </a>
+
+        </nav>
+
+        <div class="weekly-goal">
+            <p>Haftalık Hedef</p>
+
+            <div class="goal-circle">
+                <strong>72%</strong>
+            </div>
+
+            <span>5 / 7 gün tamamlandı</span>
+        </div>
+
+    </aside>
+
+
+    <!-- ANA ALAN -->
+    <main class="main-content lesson-page">
+
+        <!-- ÜST BAR -->
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <span>Hoş geldin 👋</span>
+                    <h2>Duygu ÖZTÜRK</h2>
+                </div>
+
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Ders, konu veya test ara..."
+                    >
+                </div>
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <button class="profile-button">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- GERİ / BREADCRUMB -->
+        <div class="lesson-breadcrumb">
+
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+                Ana Sayfa
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>Borçlar Hukuku</span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <strong>Sözleşmenin Kurulması</strong>
+
+        </div>
+
+
+        <!-- DERS BAŞLIK -->
+        <section class="lesson-header">
+
+            <div>
+
+                <span class="lesson-label">
+                    BORÇLAR HUKUKU
+                </span>
+
+                <h1>Sözleşmenin Kurulması</h1>
+
+                <p>
+                    Sözleşmenin kurulması, öneri ve kabul kavramlarını
+                    video ders ile öğren; ardından konu testini çöz.
+                </p>
+
+            </div>
+
+            <div class="lesson-progress-box">
+
+                <span>Ders İlerlemesi</span>
+
+                <strong>65%</strong>
+
+                <div class="lesson-progress">
+                    <div></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DERS İÇERİĞİ -->
+        <section class="lesson-layout">
+
+            <!-- SOL KONU LİSTESİ -->
+            <aside class="topics-panel">
+
+                <div class="topics-title">
+                    <span>DERS İÇERİĞİ</span>
+                    <h3>Konular</h3>
+                </div>
+
+
+                <div class="topic-item completed">
+
+                    <div class="topic-number">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+                        <strong>Borç İlişkisi</strong>
+                        <span>18 dakika</span>
+                    </div>
+
+                </div>
+
+
+                <div class="topic-item completed">
+
+                    <div class="topic-number">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+                        <strong>Borcun Kaynakları</strong>
+                        <span>22 dakika</span>
+                    </div>
+
+                </div>
+
+
+                <div class="topic-item active">
+
+                    <div class="topic-number">
+                        3
+                    </div>
+
+                    <div>
+                        <strong>Sözleşmenin Kurulması</strong>
+                        <span>26 dakika</span>
+                    </div>
+
+                    <i class="fa-solid fa-play topic-play"></i>
+
+                </div>
+
+
+                <div class="topic-item">
+
+                    <div class="topic-number">
+                        4
+                    </div>
+
+                    <div>
+                        <strong>İrade Bozuklukları</strong>
+                        <span>24 dakika</span>
+                    </div>
+
+                </div>
+
+
+                <div class="topic-item">
+
+                    <div class="topic-number">
+                        5
+                    </div>
+
+                    <div>
+                        <strong>Temerrüt</strong>
+                        <span>21 dakika</span>
+                    </div>
+
+                </div>
+
+
+                <div class="topic-item">
+
+                    <div class="topic-number">
+                        6
+                    </div>
+
+                    <div>
+                        <strong>Borcun Sona Ermesi</strong>
+                        <span>29 dakika</span>
+                    </div>
+
+                </div>
+
+
+                <div class="course-completion">
+
+                    <div>
+                        <span>Ders Tamamlama</span>
+                        <strong>2 / 6</strong>
+                    </div>
+
+                    <div class="course-completion-bar">
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- SAĞ ANA DERS -->
+            <div class="lesson-content">
+
+                <!-- VIDEO -->
+                <div class="video-card">
+
+                    <div class="video-heading">
+
+                        <div>
+                            <span>VİDEO DERS</span>
+                            <h2>Sözleşmenin Kurulması</h2>
+                        </div>
+
+                        <div class="video-duration">
+                            <i class="fa-regular fa-clock"></i>
+                            26 dakika
+                        </div>
+
+                    </div>
+
+
+                    <div class="video-wrapper">
+
+                        <!--
+                        DEMO VIDEO
+
+                        Daha sonra avukatın istediği YouTube
+                        videosunun embed linkini buraya koyabiliriz.
+                        -->
+
+                        <iframe
+                            src="https://www.youtube.com/embed/RFkIzWmDDsU"
+                            title="Sözleşmenin Kurulması - Borçlar Hukuku"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DERS AÇIKLAMASI -->
+                <div class="lesson-info-card">
+
+                    <div class="lesson-info-main">
+
+                        <span class="small-title">
+                            BU DERSTE
+                        </span>
+
+                        <h3>Neler öğreneceksin?</h3>
+
+                        <p>
+                            Bu bölümde sözleşmenin kurulabilmesi için gerekli
+                            temel şartları, öneri ve kabul kavramlarını ve
+                            tarafların irade beyanlarının hukuki sonuçlarını
+                            inceleyeceksin.
+                        </p>
+
+
+                        <div class="learning-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Öneri (icap) kavramı
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Kabul beyanı
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                İrade beyanlarının uygunluğu
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Sözleşmenin kurulma anı
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TEST KUTUSU -->
+                    <div class="lesson-test-box">
+
+                        <div class="test-icon">
+                            <i class="fa-solid fa-clipboard-question"></i>
+                        </div>
+
+                        <div>
+                            <span>KONU TESTİ</span>
+                            <h3>Bilgini Test Et</h3>
+
+                            <p>
+                                Video dersi tamamladıktan sonra
+                                5 soruluk konu testini çöz.
+                            </p>
+
+                            <div class="test-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-list-check"></i>
+                                    5 Soru
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    ~5 dk
+                                </span>
+
+                            </div>
+
+                            <button 
+                               class="start-test-button"
+                               onclick="window.location.href='test.html'">
+                                Konu Testini Çöz
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ALT GEÇİŞ -->
+                <div class="lesson-navigation">
+
+                    <button>
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        <span>
+                            <small>Önceki Konu</small>
+                            Borcun Kaynakları
+                        </span>
+                    </button>
+
+
+                    <button class="next-topic">
+
+                        <span>
+                            <small>Sonraki Konu</small>
+                            İrade Bozuklukları
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
